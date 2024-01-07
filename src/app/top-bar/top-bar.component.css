@@ -1,0 +1,10 @@
+ul {
+  padding-left: 0px;
+}
+li {
+  display: inline-block;
+  padding-right: 10px;
+}
+a {
+  color: white;
+}

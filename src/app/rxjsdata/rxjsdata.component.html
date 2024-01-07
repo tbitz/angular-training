@@ -1,0 +1,5 @@
+<div *ngIf="(data$ | async) as data">
+  <div *ngFor="let todo of data">
+    {{ todo.title }}
+  </div>
+</div>

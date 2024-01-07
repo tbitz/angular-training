@@ -1,0 +1,16 @@
+<form [formGroup]="form" (ngSubmit)="handleSubmit()">
+  <label for="email">Email</label>
+  <input type="text" formControlName="email" />
+  <div *ngIf="submitted && form.controls['email'].invalid">
+    {{ getMessage(form.controls['email']) }}
+  </div>
+
+  <label for="username">Username</label>
+  <input type="text" formControlName="username" />
+  <div *ngIf="submitted && form.controls['username'].invalid">Invalid</div>
+
+  <label for="password">Password</label>
+  <input type="password" formControlName="password" />
+  <div *ngIf="submitted && form.controls['password'].invalid">Invalid</div>
+  <div><button type="submit">Submit</button></div>
+</form>
